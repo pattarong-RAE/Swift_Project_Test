@@ -1,0 +1,21 @@
+//Config background 
+$primary : #ffa200;
+$secoundary : #6eda78;
+$directionColor : -90deg;
+
+
+.bg-main {
+    background : linear-gradient($directionColor,$primary ,$secoundary);
+    width: 100vw;
+    height: auto;
+}
+.bg-remove {
+    background: none;
+    margin: 0;
+    padding: 0;
+}
+.f-center{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

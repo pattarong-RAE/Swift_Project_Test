@@ -1,0 +1,50 @@
+{
+  "title": "Willkommen zu react und react-i18next",
+  "description": {
+    "part1": "Um loszulegen, ändere <1>src/App(DE).js</1> und speichere um neuzuladen.",
+    "part2": "สวัสดี"
+  },
+  "card-select" : {
+    "description" : ["การจัดการหน้าเว็บ","การเชื่อมต่อ API","การจัดการหน้าฟอร์ม"],
+    "test" : "แบบทดสอบที่"
+  },
+  "table" : {
+    "title" : {
+      "name" : "ชื่อ",
+      "gender" : "เพศ",
+      "mobile_phone" : "หมายเลขโทรศัพท์มือถือ",
+      "nationality" : "สัญชาติ",
+      "manage" : "จัดการ",
+      "Male" : "ผู้ชาย",
+      "Female" : "ผู้หญิง",
+      "Unsex" : "ไม่ระบุ",
+      "Thai" : "ไทย",
+      "France" : "ฝรั่งเศส",
+      "America" : "อเมริกา"
+    },
+    "button" : {
+      "EDIT" : "แก้ไขข้อมูล",
+      "DELETE" : "ลบข้อมูล",
+      "NEXT" : "ถัดไป",
+      "PREV" : "ก่อนหน้า",
+      "SALL" : "เลือกทั้งหมด"
+    }
+  },
+  "form" : {
+    "Title" : "คำนำหน้า",
+    "Firstname" : "ชื่อจริง",
+    "Lastname" : "นามสกุล",
+    "Nationality" : "สัญชาติ",
+    "Gender" : "เพศ",
+    "PassportNo" : "หนังสือเดินทาง",
+    "ExpectedSalary" : "เงินเดือนที่คาดหวัง",
+    "Date" : "วันเกิด",
+    "SelectDate" : "เลือกวัน",
+    "Citizen" : "เลขบัตรประชาชน",
+    "MobilePhone" : "หมายเลขโทรศัพท์มือถือ",
+    "button" : {
+      "RESET" : "ล้างข้อมูล",
+      "SUMMIT" : "ส่งข้อมูล"
+    }
+  }
+}

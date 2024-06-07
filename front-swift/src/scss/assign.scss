@@ -1,0 +1,148 @@
+
+.ass-test1{
+    padding: 1%;
+}
+
+//Config Shape
+$percent-length : 7vmin;
+$shape-color : gray;
+$bg-card-shape : white;
+
+
+
+.card-layout-style {
+        background-color: white;
+        height: 100%;
+        width: 100%;
+        border-radius: 1vmin;
+        &:hover{
+            background-color: #ffa200;
+        }
+        &:active{
+            background-color: #6eda78;
+        }
+    }
+  @mixin circle($size) {
+    width: $size;
+    height: $size;
+    border-radius: 50%;
+  }
+  
+  @mixin square($size) {
+    width: $size;
+    height: $size;
+  }
+  
+  @mixin triangle($size, $direction ) {
+    width: 0;
+    height: 0;
+    border-style: solid;
+    $scale-shape : 2.6;
+    $scale-shapeY : 0.75;
+    @if $direction == up {
+      border-width: 0 $size $size*($scale-shape - $scale-shapeY) $size;
+      border-color: transparent transparent $shape-color transparent;
+    } 
+    @else if $direction == down {
+      border-width: $size*($scale-shape - $scale-shapeY) $size 0 $size;
+      border-color: $shape-color transparent transparent transparent;
+    } 
+    @else if $direction == left {
+      border-width: $size $size*$scale-shape $size 0;
+      border-color: transparent $shape-color transparent transparent;
+    } 
+    @else if $direction == right {
+      border-width: $size 0 $size $size*$scale-shape;
+      border-color: transparent transparent transparent $shape-color;
+    }
+  }
+  @mixin trapezoid($width, $height, $top-width, $color, $direction) {
+    width: $width;
+    height: 0;
+    @if $direction == up {
+      border-bottom: $height solid $color;
+      border-left: calc(($width - $top-width) / 2) solid transparent;
+      border-right: calc(($width - $top-width) / 2) solid transparent;
+    } @else if $direction == down {
+      border-top: $height solid $color;
+      border-left: calc(($width - $top-width) / 2) solid transparent;
+      border-right: calc(($width - $top-width) / 2) solid transparent;
+    }
+
+  }
+  @mixin parallelogram($width, $height, $skew, $color) {
+    width: $width;
+    height: $height;
+    background: $color;
+    transform: skew($skew);
+  }
+  @mixin oval($width, $height, $color) {
+    width: $width;
+    height: $height;
+    background: $color;
+    border-radius: 50%;
+  }
+
+
+  .circle-none {
+    @include circle($percent-length*2);
+    background-color: $shape-color;
+  }
+  .circle-none-active {
+    @include circle($percent-length*2);
+    background-color: $bg-card-shape;
+  }
+  
+  .square-none {
+    @include square($percent-length*2);
+    background-color: $shape-color;
+  }
+  .square-none-active {
+    @include square($percent-length*2);
+    background-color: $bg-card-shape;
+  }
+  
+  .triangle-up {
+    @include triangle($percent-length, up);
+  }
+  
+  .triangle-down {
+    @include triangle($percent-length, down);
+  }
+  
+  .triangle-left {
+    @include triangle($percent-length, left);
+  }
+  
+  .triangle-right {
+    @include triangle($percent-length, right);
+  }
+
+  .trapezoid-up {
+    @include trapezoid($percent-length*4, $percent-length*1.8, $percent-length*3, $shape-color, up);
+  }
+  
+  .trapezoid-down {
+    @include trapezoid($percent-length*4, $percent-length*1.8, $percent-length*3, $shape-color, down);
+  }
+  .trapezoid-up-active {
+    @include trapezoid($percent-length*4, $percent-length*1.8, $percent-length*3, $bg-card-shape, up);
+  }
+  
+  .trapezoid-down-active {
+    @include trapezoid($percent-length*4, $percent-length*1.8, $percent-length*3, $bg-card-shape, down);
+  }
+
+  .parallelogram-none {
+    @include parallelogram($percent-length*4, $percent-length*1.8, 20deg, $shape-color);
+  }
+  .parallelogram-none-active {
+    @include parallelogram($percent-length*4, $percent-length*1.8, 20deg, $bg-card-shape);
+  }
+
+  .oval-none {
+    @include oval($percent-length*4, $percent-length*1.8, $shape-color);
+  }
+  .oval-none-active {
+    @include oval($percent-length*4, $percent-length*1.8, $bg-card-shape);
+  }

@@ -1,0 +1,50 @@
+{
+  "title": "Welcome to react using react-i18next",
+  "description": {
+    "part1": "To get started, edit <1>src/App.js</1> and save to reload.",
+    "part2": "Switch language between english and german using buttons above."
+  },
+  "card-select" : {
+    "description" : ["Layout & Style","Connect API","Form & Table"],
+    "test" : "Test"
+  },
+  "table" : {
+    "title" : {
+      "name" : "Name",
+      "gender" : "Gender",
+      "mobile_phone" : "Mobile Phone",
+      "nationality" : "Nationality",
+      "manage" : "MANAGE",
+      "Male" : "Male",
+      "Female" : "Female",
+      "Unsex" : "Unsex",
+      "Thai" : "Thai",
+      "France" : "France",
+      "America" : "America"
+    },
+    "button" : {
+      "EDIT" : "EDIT",
+      "DELETE" : "DELETE",
+      "NEXT" : "NEXT",
+      "PREV" : "PREV",
+      "SALL" : "Select All"
+    }
+  },
+  "form" : {
+    "Title" : "Title",
+    "Firstname" : "Firstname",
+    "Lastname" : "Lastname",
+    "Nationality" : "Nationality",
+    "Gender" : "Gender",
+    "PassportNo" : "Passport No",
+    "ExpectedSalary" : "Expected Salary",
+    "Date" : "Date",
+    "SelectDate" : "SelectDate",
+    "Citizen" : "Citizen",
+    "MobilePhone" : "Mobile Phone",
+    "button" : {
+      "RESET" : "RESET",
+      "SUMMIT" : "SUMMIT"
+    }
+  }
+}
